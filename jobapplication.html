@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    background-color:gray;
+}
+.container{
+    max-width: width 100px;
+    margin: 0 auto;
+}
+.apply-box{
+    max-width: 600px;
+    padding:20px;
+    background-color:coral;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 40px 23px 55px rgb(30,70,85,700);
+    text-align: center;
+}
+.Type_small{
+    font-size: 18px;
+}
+label{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+input,select,textarea{
+    padding:6px 10px;
+    border-radius: 3px;
+    border: black 1px solid;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="apply-box">
+          <h1>Job Application Form
+            <span class="Type_small">(Web)</span>
+          </h1><br>
+          <div class="Form-container">
+            <div class="Form-group">
+                <form action="connect.php" method="post">
+              <label for="first_name"><h3>First Name:</h3></label>
+              <input type="text" id="first_name" name="First_name" placeholder="Enter First name" required="required"><br>
+            </div>
+            <div class="Form-group">
+                <label for="Last name"><h3>Last  Name:</h3></label>
+                <input type="text" id="last name" name="Last_name" placeholder="Enter Last name" required="required"><br>
+            </div>
+            <div class="Form-group">
+                <label for="Email"><h3>Email:</h3></label>
+                <input type="text" id="Email" name="Email" placeholder="Enter Email" required="required"><br>
+            </div>
+            <div class="textarea_control">
+                <label for="Address"><h3>Address:</h3></label>
+                <textarea id="Address" name="Address" placeholder="Enter Address" row="4" cols="50" required="required"></textarea><br>
+            </div>
+            <div class="Form-group">
+                <label for="Job_role"><h3>Job Role:</h3></label>
+                <select id="Job_role" name="Job_Role" required="required"><br>
+                    <option value="select job role">select Job Role</option>
+                    <option value="React Js">React Js</option>
+                    <option value="Devops">Devops</option>
+                    <option value="Frontend">Frontend</option>
+                    <option value="Backend">Backend</option>
+                </select>
+            </div>
+            <div class="Form-group">
+                <label for="City_name"><h3>City</h3></label>
+                <input type="text" id="city" name="City" placeholder="Enter City" required="required"><br>
+    </div>
+            <div class="Form-group">
+                <label for="PIN CODE:"><h3>Pin Code</h3></label>
+                <input type="number"  id="Pin code" name="Pin_Code" placeholder="Enter PIN Code" required="required"><br>
+            </div>
+            <div class="Form-group">
+                <label for="Date of Birth"><h3>DOB</h3></label>
+                <input type="date" id="date" name="DOB" required="required"><br>
+            </div>
+            <div class="form_control">
+                <label for="upload"><h3>Upload your Resume</h3></label><br>
+                <input type="file" id="upload" name="upload" required="required">
+            </div>
+            <br>
+            <div class="button_container">
+                <button type="Submit">Apply Now</button>
+            </div>
+    </div>
+    </div>
+</form>
+</body>
+</html>
